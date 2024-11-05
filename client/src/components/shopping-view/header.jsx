@@ -23,6 +23,7 @@ import UserCartWrapper from "./cart-wrapper";
 import { useEffect, useState } from "react";
 import { fetchCartItems } from "@/store/shop/cart-slice";
 import { Label } from "../ui/label";
+import shopriteLogo from '@/assets/shoprite-logo-header.svg';
 
 function MenuItems() {
   const navigate = useNavigate();
@@ -139,8 +140,10 @@ function ShoppingHeader() {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/shop/home" className="flex items-center gap-2">
-          <HousePlug className="h-6 w-6" />
-          <span className="font-bold">Ecommerce</span>
+          {/* <HousePlug className="h-6 w-6" /> */}
+          <span className="font-bold">
+            <img src={shopriteLogo} alt="Shoprite" className="h-8" style={{ filter: "hue-rotate(-10deg) saturate(100%) brightness(0) saturate(100%) invert(27%) sepia(94%) saturate(2418%) hue-rotate(343deg) brightness(85%) contrast(112%)" }} />
+          </span>
         </Link>
         <Sheet>
           <SheetTrigger asChild>

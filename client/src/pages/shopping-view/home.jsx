@@ -16,6 +16,17 @@ import {
   UmbrellaIcon,
   WashingMachine,
   WatchIcon,
+  Footprints,
+  Apple,
+  Wine,
+  Home,
+  Baby,
+  Dumbbell,
+  Tent,
+  Dog,
+  Gamepad2,
+  Laptop,
+  Gift
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
@@ -32,20 +43,24 @@ import ProductDetailsDialog from "@/components/shopping-view/product-details";
 import { getFeatureImages } from "@/store/common-slice";
 
 const categoriesWithIcon = [
-  { id: "men", label: "Men", icon: ShirtIcon },
-  { id: "women", label: "Women", icon: CloudLightning },
-  { id: "kids", label: "Kids", icon: BabyIcon },
-  { id: "accessories", label: "Accessories", icon: WatchIcon },
-  { id: "footwear", label: "Footwear", icon: UmbrellaIcon },
+  { id: "footwear", label: "Footwear", icon: Footprints },
+  { id: "food", label: "Food", icon: Apple },
+  { id: "drinks", label: "Drinks", icon: Wine },
+  { id: "household", label: "Household", icon: Home },
+  { id: "toiletries", label: "Toiletries", icon: ShoppingBasket },
+  { id: "baby", label: "Baby", icon: Baby },
+  { id: "sport", label: "Sport", icon: Dumbbell },
+  { id: "outdoor", label: "Outdoor", icon: Tent },
+  { id: "pets", label: "Pets", icon: Dog },
+  { id: "toys", label: "Toys", icon: Gamepad2 },
+  { id: "clothing-footwear", label: "Clothing & Footwear", icon: Shirt },
+  { id: "electronics", label: "Electronics", icon: Laptop },
+  { id: "gifts", label: "Gifts", icon: Gift },
 ];
 
 const brandsWithIcon = [
-  { id: "nike", label: "Nike", icon: Shirt },
-  { id: "adidas", label: "Adidas", icon: WashingMachine },
-  { id: "puma", label: "Puma", icon: ShoppingBasket },
-  { id: "levi", label: "Levi's", icon: Airplay },
-  { id: "zara", label: "Zara", icon: Images },
-  { id: "h&m", label: "H&M", icon: Heater },
+  { id: "internal", label: "Internal", icon: Shirt },
+  { id: "external", label: "External", icon: WashingMachine },
 ];
 function ShoppingHome() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -122,7 +137,7 @@ function ShoppingHome() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="relative w-full h-[600px] overflow-hidden">
+      <div className="relative w-full h-[250px] overflow-hidden">
         {featureImageList && featureImageList.length > 0
           ? featureImageList.map((slide, index) => (
               <img
@@ -184,7 +199,7 @@ function ShoppingHome() {
         </div>
       </section>
 
-      <section className="py-12 bg-gray-50">
+      {/* <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Shop by Brand</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -201,7 +216,7 @@ function ShoppingHome() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-12">
         <div className="container mx-auto px-4">

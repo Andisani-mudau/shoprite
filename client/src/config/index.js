@@ -58,11 +58,18 @@ export const addProductFormElements = [
     name: "category",
     componentType: "select",
     options: [
-      { id: "men", label: "Men" },
-      { id: "women", label: "Women" },
-      { id: "kids", label: "Kids" },
-      { id: "accessories", label: "Accessories" },
-      { id: "footwear", label: "Footwear" },
+      { id: "food", label: "Food" },
+      { id: "drinks", label: "Drinks" },
+      { id: "household", label: "Household" },
+      { id: "toiletries", label: "Toiletries" },
+      { id: "baby", label: "Baby" },
+      { id: "sport", label: "Sport" },
+      { id: "outdoor", label: "Outdoor" },
+      { id: "pets", label: "Pets" },
+      { id: "toys", label: "Toys" },
+      { id: "clothing-footwear", label: "Clothing & Footwear" },
+      { id: "electronics", label: "Electronics" },
+      { id: "gifts", label: "Gifts" },
     ],
   },
   {
@@ -70,12 +77,8 @@ export const addProductFormElements = [
     name: "brand",
     componentType: "select",
     options: [
-      { id: "nike", label: "Nike" },
-      { id: "adidas", label: "Adidas" },
-      { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
-      { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
+      { id: "external", label: "External" },
+      { id: "internal", label: "Internal" },
     ],
   },
   {
@@ -113,31 +116,6 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
-    id: "men",
-    label: "Men",
-    path: "/shop/listing",
-  },
-  {
-    id: "women",
-    label: "Women",
-    path: "/shop/listing",
-  },
-  {
-    id: "kids",
-    label: "Kids",
-    path: "/shop/listing",
-  },
-  {
-    id: "footwear",
-    label: "Footwear",
-    path: "/shop/listing",
-  },
-  {
-    id: "accessories",
-    label: "Accessories",
-    path: "/shop/listing",
-  },
-  {
     id: "search",
     label: "Search",
     path: "/shop/search",
@@ -145,37 +123,43 @@ export const shoppingViewHeaderMenuItems = [
 ];
 
 export const categoryOptionsMap = {
-  men: "Men",
-  women: "Women",
-  kids: "Kids",
-  accessories: "Accessories",
-  footwear: "Footwear",
+  food: "Food",
+  drinks: "Drinks", 
+  household: "Household",
+  toiletries: "Toiletries",
+  baby: "Baby",
+  sport: "Sport",
+  outdoor: "Outdoor", 
+  pets: "Pets",
+  toys: "Toys",
+  "clothing-footwear": "Clothing & Footwear",
+  electronics: "Electronics",
+  gifts: "Gifts",
 };
 
 export const brandOptionsMap = {
-  nike: "Nike",
-  adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
-  zara: "Zara",
-  "h&m": "H&M",
+  internal: "Internal",
+  external: "External",
 };
 
 export const filterOptions = {
   category: [
-    { id: "men", label: "Men" },
-    { id: "women", label: "Women" },
-    { id: "kids", label: "Kids" },
-    { id: "accessories", label: "Accessories" },
-    { id: "footwear", label: "Footwear" },
+    { id: "food", label: "Food" },
+    { id: "drinks", label: "Drinks" },
+    { id: "household", label: "Household" },
+    { id: "toiletries", label: "Toiletries" },
+    { id: "baby", label: "Baby" },
+    { id: "sport", label: "Sport" },
+    { id: "outdoor", label: "Outdoor" },
+    { id: "pets", label: "Pets" },
+    { id: "toys", label: "Toys" },
+    { id: "clothing-footwear", label: "Clothing & Footwear" },
+    { id: "electronics", label: "Electronics" },
+    { id: "gifts", label: "Gifts" },
   ],
   brand: [
-    { id: "nike", label: "Nike" },
-    { id: "adidas", label: "Adidas" },
-    { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
-    { id: "zara", label: "Zara" },
-    { id: "h&m", label: "H&M" },
+    { id: "internal", label: "Internal" },
+    { id: "external", label: "External" },
   ],
 };
 

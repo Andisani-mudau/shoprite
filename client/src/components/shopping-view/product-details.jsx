@@ -112,8 +112,8 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
             src={productDetails?.image}
             alt={productDetails?.title}
             width={600}
-            height={600}
-            className="aspect-square w-full object-cover"
+            //height={600}
+            className="aspect-square w-full h-full object-cover"
           />
         </div>
         <div className="">
@@ -129,11 +129,11 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
                 productDetails?.salePrice > 0 ? "line-through" : ""
               }`}
             >
-              ${productDetails?.price}
+              R{productDetails?.price}
             </p>
             {productDetails?.salePrice > 0 ? (
               <p className="text-2xl font-bold text-muted-foreground">
-                ${productDetails?.salePrice}
+                R{productDetails?.salePrice}
               </p>
             ) : null}
           </div>
