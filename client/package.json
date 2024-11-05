@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "vite build --base=https://shoprite-client.onrender.com && gh-pages -d dist",
+    "start": "serve dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
